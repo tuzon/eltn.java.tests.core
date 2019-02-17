@@ -1,14 +1,15 @@
-package org.eltn.projects.core.tests.base;
+package io.github.tuzon.projects.core.tests.base;
 
 import java.lang.reflect.Method;
 
 import org.apache.log4j.Logger;
-import org.eltn.projects.core.tests.asserts.SoftAssert;
-import org.eltn.projects.core.tests.exceptions.InvalidTestException;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+
+import io.github.tuzon.projects.core.tests.asserts.SoftAssert;
+import io.github.tuzon.projects.core.tests.exceptions.InvalidTestException;
 
 public abstract class BaseTest {
 	public static final String CLASS_SEPARETOR = "================================================================";

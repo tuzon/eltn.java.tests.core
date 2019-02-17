@@ -1,4 +1,4 @@
-package org.eltn.projects.core.tests.exceptions;
+package io.github.tuzon.projects.core.tests.exceptions;
 
 public class InvalidTestException extends Exception {
 	private static final long serialVersionUID = 1L;

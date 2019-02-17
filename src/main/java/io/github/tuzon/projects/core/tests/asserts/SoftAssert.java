@@ -1,4 +1,4 @@
-package org.eltn.projects.core.tests.asserts;
+package io.github.tuzon.projects.core.tests.asserts;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;

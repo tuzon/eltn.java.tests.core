@@ -1,6 +1,6 @@
-package org.eltn.projects.core.tests.exceptions;
+package io.github.tuzon.projects.core.tests.exceptions;
 
-import org.eltn.projects.core.tests.asserts.SoftAssert;
+import io.github.tuzon.projects.core.tests.asserts.SoftAssert;
 
 public class AutomationTestException extends Exception {
 
