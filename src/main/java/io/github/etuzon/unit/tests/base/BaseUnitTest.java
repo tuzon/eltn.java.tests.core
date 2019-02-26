@@ -1,4 +1,4 @@
-package io.github.tuzon.projects.core.tests.base;
+package io.github.etuzon.unit.tests.base;
 
 import java.lang.reflect.Method;
 
@@ -8,15 +8,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import io.github.tuzon.projects.core.tests.asserts.SoftAssert;
-import io.github.tuzon.projects.core.tests.exceptions.InvalidTestException;
+import io.github.etuzon.unit.tests.asserts.SoftAssertUnitTest;
+import io.github.etuzon.unit.tests.exceptions.InvalidUnitTestException;
 
-public abstract class BaseTest {
+public abstract class BaseUnitTest {
 	public static final String CLASS_SEPARETOR = "================================================================";
 
-	private final Logger logger = Logger.getLogger(BaseTest.class.getName());
+	private final Logger logger = Logger.getLogger(BaseUnitTest.class.getName());
 
-	protected BaseTest() {
+	protected BaseUnitTest() {
 	}
 
 	@BeforeClass
@@ -31,19 +31,19 @@ public abstract class BaseTest {
 	}
 
 	@AfterMethod
-	public void afterMethodBaseTest(ITestResult result) throws InvalidTestException {
-		String errors = SoftAssert.emptyErrors();
+	public void afterMethodBaseTest(ITestResult result) throws InvalidUnitTestException {
+		String errors = SoftAssertUnitTest.emptyErrors();
 
 		if (result.isSuccess()) {
 			if (errors.isEmpty()) {
 				logger.info("Test [" + super.getClass().getSimpleName() + "." + result.getName() + "] PASSED");
 			} else {
-				throw new InvalidTestException(getInvalidTestExceptionMessage(result, errors));
+				throw new InvalidUnitTestException(getInvalidTestExceptionMessage(result, errors));
 			}
 		} else {
 			logger.info("Test [" + super.getClass().getSimpleName() + "." + result.getTestName() + "] FAILED");
-			if (SoftAssert.emptyErrors().isEmpty() == false) {
-				throw new InvalidTestException(getInvalidTestExceptionMessage(result, errors));
+			if (SoftAssertUnitTest.emptyErrors().isEmpty() == false) {
+				throw new InvalidUnitTestException(getInvalidTestExceptionMessage(result, errors));
 			}
 		}
 	}

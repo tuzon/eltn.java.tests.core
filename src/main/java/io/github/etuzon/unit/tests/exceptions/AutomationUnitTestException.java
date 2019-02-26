@@ -1,22 +1,22 @@
-package io.github.tuzon.projects.core.tests.exceptions;
+package io.github.etuzon.unit.tests.exceptions;
 
-import io.github.tuzon.projects.core.tests.asserts.SoftAssert;
+import io.github.etuzon.unit.tests.asserts.SoftAssertUnitTest;
 
-public class AutomationTestException extends Exception {
+public class AutomationUnitTestException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 
-	public AutomationTestException() {
+	public AutomationUnitTestException() {
 		this("");
 	}
 
-	public AutomationTestException(Exception e) {
+	public AutomationUnitTestException(Exception e) {
 		this(e.getMessage() + "\n" + getExceptionStacktrace(e));
 	}
 
-	public AutomationTestException(String message) {
+	public AutomationUnitTestException(String message) {
 		super(message);
-		super.addSuppressed(new Throwable(SoftAssert.emptyErrors()));
+		super.addSuppressed(new Throwable(SoftAssertUnitTest.emptyErrors()));
 	}
 
 	private static String getExceptionStacktrace(Exception e) {

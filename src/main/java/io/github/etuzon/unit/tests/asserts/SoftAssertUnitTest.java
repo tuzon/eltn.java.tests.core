@@ -1,14 +1,14 @@
-package io.github.tuzon.projects.core.tests.asserts;
+package io.github.etuzon.unit.tests.asserts;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 
-public class SoftAssert {
+public class SoftAssertUnitTest {
 	public enum InfoMessageLogLevelEnum {
 		TRACE, DEBUG, INFO;
 	}
 
-	private static final Logger logger = Logger.getLogger(SoftAssert.class.getName());
+	private static final Logger logger = Logger.getLogger(SoftAssertUnitTest.class.getName());
 
 	private static String errors = "";
 	private static InfoMessageLogLevelEnum infoMessageLevel = InfoMessageLogLevelEnum.INFO;

@@ -2,27 +2,27 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.github.tuzon</groupId>
+	<groupId>io.github.etuzon</groupId>
 	<artifactId>java.tests.core</artifactId>
-	<version>1.0.5</version>
+	<version>1.0.8</version>
 	<packaging>jar</packaging>
 
-	<name>Tests core</name>
+	<name>Unit tests core</name>
 
 	<description>Java unit tests core</description>
 
-	<url>https://github.com/tuzon/Java-Tests-Core</url>
+	<url>https://github.com/etuzon/Java-Tests-Core</url>
 
 	<scm>
-		<url>https://github.com/tuzon/Java-Tests-Core</url>
-		<connection>https://github.com/tuzon/Java-Tests-Core.git</connection>
+		<url>https://github.com/etuzon/Java-Tests-Core</url>
+		<connection>https://github.com/etuzon/Java-Tests-Core.git</connection>
 	</scm>
 
 	<developers>
 		<developer>
 			<name>Eyal Tuzon</name>
 			<email>eyal.tuzon@gmail.com</email>
-			<url>https://github.com/tuzon</url>
+			<url>https://github.com/etuzon</url>
 		</developer>
 	</developers>
 
